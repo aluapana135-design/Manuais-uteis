@@ -120,3 +120,8 @@ MOV CL, AL          ; CL = AL (agora CL também é 'A' ou 65)
 ; Você precisaria de um registrador intermediário:
 ; MOV EAX, DWORD [outra_variavel]
 ; MOV DWORD [minha_variavel], EAX
+```
+---
+No próximo módulo, vamos configurar nosso ambiente de desenvolvimento para Assembly e compilar e executar nosso primeiro
+ programa!
+---

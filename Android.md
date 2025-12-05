@@ -60,3 +60,88 @@ O aplicativo **Configurações** (geralmente representado por um ícone de engre
 ### Próximos Passos:
 
 No próximo módulo, vamos mergulhar na **instalação de aplicativos** (Google Play Store) e entender como o Android gerencia as **permissões** e o **multitarefas**.
+---
+
+## 🛠️ Módulo 2: O Reset de Fábrica no Nível do Sistema (Wipe Data)
+
+O **Modo de Recuperação (Recovery Mode)** é um pequeno sistema operacional minimalista, geralmente baseado em BusyBox (uma ferramenta de Linux embutido), que tem acesso de baixo nível às partições de memória do dispositivo. A ação de "Reset de Fábrica" não é apenas apagar arquivos; é uma operação de formatação de partição.
+
+### 2.1 A Função Técnica do Reset (`Wipe Data/Factory Reset`)
+
+Quando você seleciona a opção de reset, o Recovery Mode executa uma série de comandos de **Formatação** e **Limpeza** nas principais partições de dados do usuário.
+
+#### A. O Alvo: As Partições de Dados
+
+O Android é dividido em várias partições. As duas mais importantes para o reset são:
+
+1.  **`/data` (Partição de Dados do Usuário):** Contém todos os aplicativos instalados, configurações de aplicativos, contas, fotos, vídeos, e-mails e cache de apps.
+2.  **`/cache` (Partição de Cache do Sistema):** Armazena dados temporários do sistema para acelerar processos e aplicativos.
+
+#### B. O Processo de Formatação
+
+O Recovery Mode usa utilitários de linha de comando do Linux (como `wipe` ou `format`) para apagar o conteúdo dessas partições, garantindo que o sistema seja reiniciado sem qualquer vestígio de dados do usuário.
+
+### 2.2 O Código Conceitual da Ação
+
+Embora o código exato varie dependendo da versão do Recovery (Stock ou Custom como TWRP), a operação "Wipe Data/Factory Reset" é conceitualmente a execução de comandos de formatação de baixo nível.
+
+O trecho de código (script) que o Recovery executa é análogo ao seguinte (usando comandos Linux simplificados para ilustração):
+
+```bash
+# Código que representa a ação de 'Wipe data/factory reset'
+# 1. Monta a partição de Cache (se já não estiver montada)
+mount /cache
+
+# 2. Apaga o conteúdo da partição de Cache
+rm -rf /cache/*
+
+# 3. Desmonta a partição de Cache
+umount /cache
+
+# 4. Formata a Partição de Dados (a mais crítica)
+# Este comando apaga todo o sistema de arquivos e o recria.
+mkfs.ext4 /dev/block/bootdevice/by-name/userdata  
+# OU:
+format /data
+
+# 5. Limpa a lista de aplicativos instalados para garantir o estado de fábrica
+rm -rf /data/system/users/0/package-restrictions.xml
+2.3 Captura de Tela Simulado do Menu de Recuperação
+No Recovery Mode, a interface é em modo texto, sendo controlada pelos botões de volume. A captura de tela (simulada por texto) mostra as opções mais comuns, com a opção de Reset de Fábrica destacada:
+
+Plaintext
+
+======================================
+  ANDROID RECOVERY
+======================================
+> Reboot system now 
+  Reboot to bootloader
+  Apply update from ADB
+  Apply update from SD card
+  
+  -- VAI PARA BAIXO COM VOLUME --
+  
+  ** Wipe data/factory reset ** Wipe cache partition
+  Mount /system
+  View recovery logs
+  Power off
+======================================
+Seleção e Confirmação
+Ao selecionar Wipe data/factory reset, o sistema exige uma confirmação, pois a ação é irreversível:
+
+Plaintext
+
+======================================
+  WIPE ALL USER DATA?
+======================================
+  This cannot be undone!
+> No
+  
+  -- VAI PARA BAIXO COM VOLUME --
+  
+  ** Yes -- delete all user data **
+======================================
+Ao selecionar Yes, o sistema executa o código de formatação, apaga todos os dados e retorna ao menu principal para que o usuário possa selecionar Reboot system now.
+
+Próximos Passos:
+No próximo módulo, vamos abordar a Google Play Store, a instalação de aplicativos e o gerenciamento de Permissões no Android.

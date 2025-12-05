@@ -224,3 +224,61 @@ A **retina** é onde a mágica da visão realmente acontece. É uma extensão do
 ### Próximos Passos:
 
 O próximo módulo pode abordar a **Audição** (Ouvido e Cóclea) ou o **Tato** e os demais sentidos.
+---
+
+## 👂 Módulo 6: O Ouvido – Audição e Equilíbrio
+
+O **ouvido** é o órgão responsável por duas funções sensoriais essenciais: a **audição** (captar e processar ondas sonoras) e a **manutenção do equilíbrio** (senso de orientação espacial).
+
+
+
+[Image of the structure of the human ear, showing the outer ear, middle ear with ossicles, and inner ear with the cochlea and semi-circular canals]
+
+
+### 6.1 Divisões do Ouvido
+
+O ouvido humano é dividido em três regiões anatômicas principais:
+
+#### A. Ouvido Externo
+* **Pavilhão Auditivo (Orelha):** A parte visível, que capta e direciona as ondas sonoras.
+* **Meato Acústico Externo (Canal Auditivo):** O tubo que conduz o som até o tímpano.
+* **Membrana Timpânica (Tímpano):** Uma membrana fina que vibra em resposta às ondas sonoras.
+
+#### B. Ouvido Médio
+* Uma cavidade preenchida com ar, separada do ouvido externo pelo tímpano.
+* **Ossículos Auditivos:** Três pequenos ossos que amplificam e transmitem as vibrações do tímpano para o ouvido interno:
+    1.  **Martelo (Malleus):** Conectado ao tímpano.
+    2.  **Bigorna (Incus):** Fica entre o martelo e o estribo.
+    3.  **Estribo (Stapes):** Conectado à **Janela Oval** do ouvido interno.
+* **Tuba Auditiva (Trompa de Eustáquio):** Conecta o ouvido médio à nasofaringe, equalizando a pressão do ar em ambos os lados do tímpano.
+
+#### C. Ouvido Interno (Labirinto)
+Uma série complexa de canais ósseos e membranosos, preenchidos por fluido, que contém os órgãos da audição e do equilíbrio.
+* **Cóclea:** O órgão da audição, com formato de caracol.
+* **Canais Semicirculares:** Três canais que contêm receptores responsáveis pelo **equilíbrio dinâmico** (movimento rotacional).
+* **Vestíbulo (Sáculo e Utriculo):** Contém receptores responsáveis pelo **equilíbrio estático** (gravidade e aceleração linear).
+
+### 6.2 O Mecanismo da Audição
+
+A audição é o resultado de uma série de transformações de energia:
+
+1.  **Captação (Energia Sonora):** O pavilhão auditivo capta e o canal auditivo conduz as ondas sonoras.
+2.  **Vibração (Energia Mecânica):** As ondas atingem o **tímpano**, fazendo-o vibrar.
+3.  **Amplificação e Transmissão:** O **Martelo**, a **Bigorna** e o **Estribo** capturam essa vibração. O sistema de ossículos atua como uma alavanca, **amplificando** o sinal sonoro em cerca de 20 vezes e o transferindo para a **Janela Oval**.
+4.  **Movimento de Fluidos:** O Estribo empurra a Janela Oval, criando ondas de pressão no fluido (perilinfa) dentro da **Cóclea**.
+
+### 6.3 A Função da Cóclea
+
+A **Cóclea** é o verdadeiro transdutor de som. Seu interior é dividido em três câmaras preenchidas por fluidos e contém o **Órgão de Corti**.
+
+* **Órgão de Corti:** A estrutura sensorial dentro da cóclea, localizada sobre a **Membrana Basilar**. É aqui que os sinais mecânicos são convertidos em sinais elétricos.
+* **Células Ciliadas (Hair Cells):** São os receptores sensoriais no Órgão de Corti. As ondas de pressão no fluido coclear movem a Membrana Basilar, fazendo com que os cílios dessas células se flexionem contra a **Membrana Tectória**.
+* **Transdução:** O movimento dos cílios abre canais iônicos, gerando impulsos nervosos.
+    * **Percepção de Frequência (Tom):** Diferentes frequências de som (tons) causam o pico de vibração em diferentes partes da Membrana Basilar: **sons agudos** vibram a base (próximo à Janela Oval), e **sons graves** vibram o ápice (mais distante).
+* **Nervo Coclear:** Os impulsos nervosos gerados pelas células ciliadas viajam pelo nervo coclear (um ramo do Nervo Vestibulococlear) até o **Córtex Auditivo** no cérebro, onde o som é processado e percebido.
+
+---
+
+### Próximos Passos:
+
+O próximo módulo pode abordar o **Tato** (Pele e Receptores Somatossensoriais) e os sentidos químicos (olfato e paladar).

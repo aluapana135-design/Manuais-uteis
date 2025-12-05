@@ -156,3 +156,71 @@ Estes dois ciclos ocorrem simultaneamente e são regulados por feedback hormonal
 ### Próximos Passos:
 
 O próximo módulo pode abordar a **Fertilização**, o desenvolvimento embrionário inicial e as **Glándulas Mamárias** (Anatomia e Função).
+---
+
+## 👀 Módulo 5: O Olho – Anatomia e Mecanismo da Visão
+
+O olho é o órgão sensorial responsável pela **visão**, um processo complexo que envolve a captação de luz, a formação da imagem e a transmissão dos sinais neurais para o cérebro.
+
+
+
+[Image of the cross section of the human eye showing the cornea, iris, pupil, lens, retina, vitreous humor, and optic nerve]
+
+
+### 5.1 Anatomia Básica do Olho
+
+O globo ocular é composto por três camadas principais (túnicas) e componentes internos:
+
+#### A. Túnicas (Camadas)
+1.  **Túnica Fibrosa (Externa):**
+    * **Esclera:** O "branco" do olho; uma camada protetora resistente.
+    * **Córnea:** A parte transparente na frente, que funciona como a primeira e mais potente lente refratora do olho.
+2.  **Túnica Vascular (Média/Uvea):**
+    * **Coroide:** Camada vascularizada que fornece nutrientes à retina.
+    * **Corpo Ciliar:** Estrutura muscular que contém o músculo ciliar, responsável por alterar o formato do **cristalino** (acomodação).
+    * **Íris:** A parte colorida do olho, que controla o tamanho da pupila.
+3.  **Túnica Nervosa (Interna):**
+    * **Retina:** A camada mais interna e fundamental, onde os fotorreceptores convertem a luz em sinais elétricos.
+
+#### B. Componentes Internos
+* **Cristalino (Lente):** Lente biconvexa localizada atrás da íris. Ajusta a focalização da imagem na retina.
+* **Humor Aquoso:** Fluido transparente na câmara anterior (entre a córnea e o cristalino).
+* **Humor Vítreo:** Gel transparente que preenche a câmara posterior do olho (a maior parte do globo ocular), mantendo sua forma.
+
+### 5.2 O Papel da Pupila e da Íris
+
+O mecanismo da pupila e da íris é análogo ao diafragma de uma câmera, controlando a quantidade de luz que atinge a retina.
+
+* **Íris:** Possui dois conjuntos de músculos lisos:
+    * **Músculo Esfíncter da Pupila (Circular):** Contrai a pupila em resposta à **luz intensa** (miose).
+    * **Músculo Dilatador da Pupila (Radial):** Dilata a pupila em ambientes de **pouca luz** (midríase).
+* **Pupila:** É simplesmente a **abertura** central na íris. Sua função é **regular** a quantidade de luz que entra no olho para proteger a retina e otimizar a clareza da imagem.
+
+### 5.3 A Retina: Capturando e Convertendo a Luz (Fotorrecepção)
+
+A **retina** é onde a mágica da visão realmente acontece. É uma extensão do sistema nervoso central e contém os **fotorreceptores**.
+
+#### Fotorreceptores:
+1.  **Cones:**
+    * Responsáveis pela visão em **cores** e pela **alta acuidade** (detalhes finos).
+    * Funcionam melhor em condições de **luz intensa**.
+    * Estão concentrados principalmente na **Fóvea**, o centro da Mácula Lútea, que é a área de visão mais nítida.
+2.  **Bastonetes:**
+    * Responsáveis pela visão em **preto e branco** (tons de cinza).
+    * Funcionam muito bem em condições de **pouca luz** (visão noturna).
+    * Estão distribuídos por toda a retina periférica.
+
+#### Processo de Visão Simplificado:
+
+1.  **Captação:** A luz entra no olho e passa pela **Córnea** e pelo **Cristalino**, que refratam a luz para focalizá-la.
+2.  **Regulagem:** A **Pupila** ajusta-se para controlar a intensidade da luz.
+3.  **Focalização:** O **Cristalino** se ajusta (acomodação) para garantir que a imagem chegue nítida na **Retina**.
+4.  **Conversão:** A luz atinge os **Cones** e **Bastonetes**. Esses fotorreceptores convertem a energia luminosa em sinais elétricos (impulsos nervosos) por meio de um processo químico.
+5.  **Transmissão:** Os sinais elétricos são transmitidos pelas células nervosas da retina (células bipolares e ganglionares) até o **Nervo Óptico**.
+6.  **Interpretação:** O **Nervo Óptico** leva os sinais para o Córtex Visual no lobo occipital do cérebro, onde a informação é processada e a imagem é "vista" e interpretada.
+
+---
+
+### Próximos Passos:
+
+O próximo módulo pode abordar a **Audição** (Ouvido e Cóclea) ou o **Tato** e os demais sentidos.

